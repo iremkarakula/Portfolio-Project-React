@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .nav-a {
+        @apply px-4 py-1.5 rounded-full text-sm font-normal transition duration-200;
+    }
+
+
+    .nav-a:hover {
+        @apply bg-gray-200 bg-opacity-40;
+    }
+
+
+
+}
