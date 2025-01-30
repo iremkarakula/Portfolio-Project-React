@@ -15,3 +15,46 @@ export const skillsData = [
     ".NET",
     "Git",
 ]
+
+export const projectsData = [
+    {
+        category: "Frontend",
+        year: "2024",
+        title: "Pizza Order Project",
+        shortDescription: "",
+        longDesciption: "",
+        features: [],
+        tags: ["React", "Javascript", "CSS", "HTML"],
+        images: [],
+    },
+    {
+        category: "Backend",
+        year: "2025",
+        title: "Book Review Project",
+        shortDescription: "",
+        longDesciption: "",
+        features: [],
+        tags: ["Java", "Spring", "Hibernate", "Lombok", "JWT", "SQL", "PostgreSQL"],
+        images: [],
+    },
+    {
+        category: "Frontend",
+        year: "2024",
+        title: "Pizza Order Project",
+        shortDescription: "",
+        longDesciption: "",
+        features: [],
+        tags: ["React", "Javascript", "CSS", "HTML"],
+        images: [],
+    },
+    {
+        category: "Backend",
+        year: "2025",
+        title: "Book Review Project",
+        shortDescription: "",
+        longDesciption: "",
+        features: [],
+        tags: ["Java", "Spring", "Hibernate", "Lombok", "JWT", "SQL", "PostgreSQL"],
+        images: [],
+    },
+]
