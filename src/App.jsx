@@ -4,6 +4,7 @@ import './App.css'
 import { useTheme } from './context/ThemeContex';
 import Header from './sections/Header'
 import Hero from './sections/Hero'
+import About from './sections/About';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <div className='bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-white font-inter min-h-screen '>
       <Header />
       <Hero />
+      <About />
       <button
         onClick={toggleTheme}
         className='fixed bottom-4 right-4  flex justify-center items-center border border-gray-400 dark:border-white/20 w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-900'>
