@@ -8,7 +8,7 @@ function About() {
         <section className='px-3'>
             <div className='container flex flex-col lg:flex-row space-y-12 justify-center items-center '>
                 <div className='max-w-xl'>
-                    <h2 className="title
+                    <h2 className="tracking-wider font-semibold text-xl md:text-2xl bg-gradient-to-r from-gray-700 via-gray-600 via-purple-700 to-purple-800 text-transparent bg-clip-text
                     dark:from-purple-500 dark:via-purple-400 dark:via-purple-350 dark:to-purple-300 ">
                         About me
                     </h2>
