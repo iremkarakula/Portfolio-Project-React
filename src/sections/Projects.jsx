@@ -2,11 +2,12 @@ import React from 'react'
 import { projectsData } from '../../data'
 import Project from '../components/Project'
 import { ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 function Projects() {
 
     return (
-        <section className=' px-2'>
+        <section className=' px-2' id='projects'>
             <div className='container'>
                 <h2 className="tracking-wider font-semibold text-xl md:text-2xl  text-center
             bg-gradient-to-r from-gray-700 via-gray-600 via-purple-700 to-purple-800 
@@ -19,12 +20,14 @@ function Projects() {
                         return <Project project={project} />
                     })}
                 </div>
-                <button className="w-fit flex items-center gap-2 border border-white/20 px-3 py-2 rounded-lg 
+                <Link to="/projects">
+                    <button className="w-fit flex items-center gap-2 border border-white/20 px-3 py-2 rounded-lg 
                     bg-gray-800 text-white text-sm m-auto my-12">
-                    <span className=''> Explore All Projects</span>
-                    <span><ArrowRight size={18} /></span>
+                        <span className=''> Explore All Projects</span>
+                        <span><ArrowRight size={18} /></span>
+                    </button>
+                </Link>
 
-                </button>
 
             </div>
         </section>

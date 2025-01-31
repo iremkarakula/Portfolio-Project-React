@@ -6,7 +6,7 @@ import Circle from '../components/Circle'
 
 function Hero() {
     return (
-        <section className='py-32 px-1.5 md:py-48 lg:py-60'>
+        <section className='py-32 px-1.5 md:py-48 lg:py-60' id='home'>
             <div className='container'>
                 <div className='flex flex-col items-center'>
                     <img src={emoji} className='w-[120px] h-[120px] translate-y-1.5' />

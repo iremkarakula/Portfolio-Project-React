@@ -5,7 +5,7 @@ import photo from "../assets/software-girl-ai.jpg"
 
 function About() {
     return (
-        <section className='px-3'>
+        <section className='px-3' id='about'>
             <div className='container flex flex-col lg:flex-row space-y-12 justify-center items-center '>
                 <div className='max-w-xl'>
                     <h2 className="tracking-wider font-semibold text-xl md:text-2xl bg-gradient-to-r from-gray-700 via-gray-600 via-purple-700 to-purple-800 text-transparent bg-clip-text

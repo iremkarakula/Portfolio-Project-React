@@ -3,12 +3,11 @@ import { Moon, Sun } from 'lucide-react';
 import './App.css'
 import { useTheme } from './context/ThemeContex';
 import Header from './sections/Header'
-import Hero from './sections/Hero'
-import About from './sections/About';
-import Skills from './sections/Skills';
-import Projects from './sections/Projects';
-import Experience from './sections/Experience';
-import Contact from './sections/Contact';
+
+import HomePage from './pages/HomePage';
+import { Route, Routes } from "react-router-dom"
+import ProjectsPage from './pages/ProjectsPage';
+import ProjectDetails from './pages/ProjectDetails';
 
 function App() {
 
@@ -16,13 +15,14 @@ function App() {
 
   return (
     <div className='bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-white font-inter min-h-screen '>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:id" element={<ProjectDetails />} />
+      </Routes>
+
       <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Contact />
+
       <button
         onClick={toggleTheme}
         className='fixed bottom-4 right-4  flex justify-center items-center border border-gray-400 dark:border-white/20 w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-900'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <section className='px-2 pb-24'>
+        <section className='px-2 pb-24' id='contact'>
             <h2 className="tracking-wider font-semibold text-xl md:text-2xl  text-center
                 bg-gradient-to-r from-gray-700 via-gray-600 via-purple-700 to-purple-800 
                 text-transparent bg-clip-text

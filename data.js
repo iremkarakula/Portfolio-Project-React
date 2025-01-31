@@ -20,6 +20,7 @@ export const skillsData = [
 
 export const projectsData = [
     {
+        id: 1,
         category: "Frontend",
         year: "2024",
         title: "Pizza Order Project",
@@ -30,6 +31,7 @@ export const projectsData = [
         images: [],
     },
     {
+        id: 2,
         category: "Backend",
         year: "2025",
         title: "Book Review Project",
@@ -40,6 +42,7 @@ export const projectsData = [
         images: [],
     },
     {
+        id: 3,
         category: "Frontend",
         year: "2024",
         title: "Pizza Order Project",
@@ -50,6 +53,7 @@ export const projectsData = [
         images: [],
     },
     {
+        id: 4,
         category: "Backend",
         year: "2025",
         title: "Book Review Project",

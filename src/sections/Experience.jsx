@@ -9,7 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 function Experience() {
     const { darkMode } = useTheme();
     return (
-        <section className='py-48'>
+        <section className='py-48' id='experiences'>
             <h2 className="tracking-wider font-semibold text-xl md:text-2xl  text-center
             bg-gradient-to-r from-gray-700 via-gray-600 via-purple-700 to-purple-800 
             text-transparent bg-clip-text
