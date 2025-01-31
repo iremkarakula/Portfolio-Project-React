@@ -8,6 +8,7 @@ import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Experience from './sections/Experience';
+import Contact from './sections/Contact';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Skills />
       <Projects />
       <Experience />
+      <Contact />
       <button
         onClick={toggleTheme}
         className='fixed bottom-4 right-4  flex justify-center items-center border border-gray-400 dark:border-white/20 w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-900'>
