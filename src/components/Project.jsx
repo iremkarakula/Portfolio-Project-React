@@ -38,13 +38,13 @@ function Project({ project }) {
                         </div>
 
                         <h2 className="text-lg mt-2">{project.title}</h2>
-                        <div className='mt-2 flex flex-wrap gap-1.5'>
+                        <ul className='mt-2 flex flex-wrap gap-1.5'>
                             {project.tags.map(tag => {
-                                return <span className='font-medium text-xs py-2 px-3 bg-white border border-gray-300 dark:border-gray-700
-                            rounded-full  dark:bg-gray-800'>{tag}</span>
+                                return <li className='font-medium text-xs py-2 px-3 bg-white border border-gray-300 dark:border-gray-700
+                            rounded-full  dark:bg-gray-800'>{tag}</li>
                             })}
 
-                        </div>
+                        </ul>
 
 
                     </div>
