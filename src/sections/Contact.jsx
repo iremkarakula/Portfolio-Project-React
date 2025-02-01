@@ -1,15 +1,13 @@
+import { Send } from 'lucide-react'
 import React from 'react'
 
 function Contact() {
     return (
         <section className='px-2 pb-24' id='contact'>
-            <h2 className="tracking-wider font-semibold text-xl md:text-2xl  text-center
-                bg-gradient-to-r from-gray-700 via-gray-600 via-purple-700 to-purple-800 
-                text-transparent bg-clip-text
-                    dark:from-purple-500 dark:via-purple-400 dark:via-purple-350 dark:to-purple-300  ">
+            <h2 className="sub-title dark:sub-title-dark text-center  ">
                 Contact Me
             </h2>
-            <p className='text-center text-gray-900/70 dark:text-white/70 md:text-lg mt-4'>
+            <p className='text-center text dark:text-dark mt-4'>
                 Please contact me directly at {" "}
                 <a className="underline" href="mailto:">
                     x@gmail.com
@@ -34,6 +32,9 @@ function Contact() {
                     required
                     maxLength={5000}
                 />
+                <button type='submit' className='w-fit flex items-center gap-2 border border-white/20 px-3 py-2 rounded-lg bg-gray-800 text-white text-sm '>
+                    Submit <Send size={13} />
+                </button>
             </form>
         </section>
     )

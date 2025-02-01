@@ -9,10 +9,7 @@ function Projects() {
     return (
         <section className=' px-2' id='projects'>
             <div className='container'>
-                <h2 className="tracking-wider font-semibold text-xl md:text-2xl  text-center
-            bg-gradient-to-r from-gray-700 via-gray-600 via-purple-700 to-purple-800 
-            text-transparent bg-clip-text
-                dark:from-purple-500 dark:via-purple-400 dark:via-purple-350 dark:to-purple-300  mb-8">
+                <h2 className="sub-title dark:sub-title-dark text-center mb-8">
                     Projects
                 </h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>

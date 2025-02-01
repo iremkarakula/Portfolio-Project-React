@@ -9,10 +9,7 @@ function Experience() {
     const { darkMode } = useTheme();
     return (
         <section className='py-48' id='experiences'>
-            <h2 className="tracking-wider font-semibold text-xl md:text-2xl  text-center
-            bg-gradient-to-r from-gray-700 via-gray-600 via-purple-700 to-purple-800 
-            text-transparent bg-clip-text
-                dark:from-purple-500 dark:via-purple-400 dark:via-purple-350 dark:to-purple-300  mb-8">
+            <h2 className="sub-title dark:sub-title-dark text-center mb-8">
                 Experiences
             </h2>
             <VerticalTimeline lineColor={darkMode ? "rgba(156, 163, 175, 1)" : "rgba(209, 213, 219, 0.5)"}>

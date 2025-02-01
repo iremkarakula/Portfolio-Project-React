@@ -1,4 +1,6 @@
 import { Code, GraduationCap } from "lucide-react"
+import photo from "./src/assets/html-css-collage-concept-with-person.jpg"
+import photo2 from "./src/assets/programming-background-with-html.jpg"
 
 export const skillsData = [
     "HTML",
@@ -33,7 +35,7 @@ export const projectsData = [
             "React Router DOM and Cypress: Integrated React Router DOM for smooth navigation between pages and implemented Cypress for end-to-end testing to ensure functionality and a seamless user experience."
         ],
         tags: ["React", "Javascript", "CSS", "HTML"],
-        images: [],
+        images: [photo],
     },
     {
         id: 2,
@@ -44,7 +46,7 @@ export const projectsData = [
         longDesciption: "",
         features: [],
         tags: ["Java", "Spring", "Hibernate", "Lombok", "JWT", "SQL", "PostgreSQL"],
-        images: [],
+        images: [photo2],
     },
     {
         id: 3,
@@ -55,7 +57,7 @@ export const projectsData = [
         longDesciption: "",
         features: [],
         tags: ["React", "Javascript", "CSS", "HTML"],
-        images: [],
+        images: [photo],
     },
     {
         id: 4,
@@ -66,7 +68,7 @@ export const projectsData = [
         longDesciption: "",
         features: [],
         tags: ["Java", "Spring", "Hibernate", "Lombok", "JWT", "SQL", "PostgreSQL"],
-        images: [],
+        images: [photo2],
     },
 ]
 

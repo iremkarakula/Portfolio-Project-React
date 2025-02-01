@@ -25,7 +25,7 @@ function ProjectsPage() {
         : projectsData;
 
     return (
-        <motion.div className='py-32 px-1.5 md:py-36'
+        <motion.div className='py-24 px-1.5 md:py-28'
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
             <div className='flex gap-4  fixed top-0 bg-purple-100/70 dark:bg-gray-500/20 backdrop-blur w-full p-3 justify-center shadow-md dark:shadow-white/20'>
@@ -34,13 +34,13 @@ function ProjectsPage() {
                 </Link>
             </div>
 
-            <h1 className='font-calistoga text-3xl md:text-5xl text-center mt-8 tracking-wide leading-8'>
+            <h1 className='main-title text-3xl md:text-5xl text-center mt-8'>
                 My Projects
             </h1>
-            <ul className='flex flex-wrap gap-2 text-sm md:text-base  max-w-2xl justify-center m-auto mt-20'>
+            <ul className='flex flex-wrap gap-2 text-sm md:text-base  max-w-2xl justify-center m-auto mt-16 md:mt-20'>
                 {skillsData.map((tag, index) => {
                     return <li key={index}
-                        className={` border border-black/20 rounded-xl px-2 py-1.5 md:px-3 md:py-2  cursor-pointer
+                        className={` tag dark:tag-dark cursor-pointer text-sm md:text-base px-2.5 py-1.5 md:px-3.5 md:py-2
                         ${selectedTag.includes(tag) ? "bg-gray-700 text-white dark:bg-gray-200 dark:text-gray-900" : "bg-white dark:bg-white/10 text-gray-800 dark:text-white/80"}`}
                         onClick={() => handleTag(tag)}>
                         {tag}
