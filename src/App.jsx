@@ -2,7 +2,6 @@
 import { Moon, Sun } from 'lucide-react';
 import './App.css'
 import { useTheme } from './context/ThemeContex';
-import Header from './sections/Header'
 
 import HomePage from './pages/HomePage';
 import { Route, Routes } from "react-router-dom"
@@ -21,11 +20,9 @@ function App() {
         <Route path="/projects/:id" element={<ProjectDetails />} />
       </Routes>
 
-      <Header />
-
       <button
         onClick={toggleTheme}
-        className='fixed bottom-4 right-4  flex justify-center items-center border border-gray-400 dark:border-white/20 w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-900'>
+        className='fixed bottom-4 right-4  flex justify-center items-center border border-gray-400 dark:border-white/20 w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-900 z-40'>
         {darkMode ? <Sun size={20} /> : <Moon size={20} />}
       </button>
     </div>

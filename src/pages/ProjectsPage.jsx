@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { projectsData, skillsData } from '../../data'
 import ProjectPP from '../components/ProjectPP'
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 
 function ProjectsPage() {
@@ -27,6 +28,11 @@ function ProjectsPage() {
         <motion.div className='py-32 px-1.5 md:py-36'
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
+            <div className='flex gap-4  fixed top-0 bg-purple-100/70 dark:bg-gray-500/20 backdrop-blur w-full p-3 justify-center shadow-md dark:shadow-white/20'>
+                <Link to="/" className='text-gray-800 dark:text-gray-100 hover:text-purple-900 dark:hover:text-purple-200 text-lg md:text-xl font-medium'>
+                    Home
+                </Link>
+            </div>
 
             <h1 className='font-calistoga text-3xl md:text-5xl text-center mt-8 tracking-wide leading-8'>
                 My Projects

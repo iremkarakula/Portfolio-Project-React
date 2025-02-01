@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from "framer-motion"
+import { Link } from 'react-router-dom';
 
 function Project({ project }) {
     const ref = useRef(null);
@@ -49,12 +50,14 @@ function Project({ project }) {
 
                     </div>
 
-
-                    <button className="w-fit flex items-center gap-2 border border-white/20 px-3 py-2 rounded-lg 
+                    <Link to={`/projects/${project.id}`}>
+                        <button className="w-fit flex items-center gap-2 border border-white/20 px-3 py-2 rounded-lg 
                     bg-gray-800 text-white text-sm ">
-                        <span className=''>Explore Project</span>
-                        <span><ArrowRight size={18} /></span>
-                    </button>
+                            <span className=''>Explore Project</span>
+                            <span><ArrowRight size={18} /></span>
+                        </button>
+                    </Link>
+
                 </div>
 
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useTheme } from '../context/ThemeContex'
 
 function Header() {
 

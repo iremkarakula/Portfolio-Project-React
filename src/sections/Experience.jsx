@@ -2,7 +2,6 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { experiencesData } from '../../data'
 import { useTheme } from '../context/ThemeContex';
-import { Factory } from 'lucide-react';
 import "react-vertical-timeline-component/style.min.css";
 
 
