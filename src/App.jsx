@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import { Route, Routes } from "react-router-dom"
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectDetails from './pages/ProjectDetails';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div className='bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-white font-inter min-h-screen '>
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
